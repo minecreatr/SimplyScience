@@ -6,6 +6,7 @@ import com.minecreatr.simplyscience.common.SSBlocks;
 import com.minecreatr.simplyscience.common.init.BlocksInit;
 import com.minecreatr.simplyscience.common.init.ItemsInit;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Optional;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.Side;
@@ -27,6 +28,7 @@ import net.minecraft.item.ItemStack;
  *
  * @author minecreatr
  */
+@Optional.Interface(iface = "com.enderio.core.IEnderMod", modid = "endercore")
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION)
 public class SimplyScience implements IEnderMod, Reference{
 
